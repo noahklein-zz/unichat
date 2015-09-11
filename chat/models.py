@@ -9,7 +9,6 @@ class Chatroom(models.Model):
         return self.name
 
 
-
 class Message(models.Model):
     chatroom = models.ForeignKey(Chatroom)
     username = models.CharField(max_length=32)
