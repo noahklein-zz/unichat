@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from models import *
 
-# Create your views here.
+
+def chatroom(request, chatroom_slug):
+    chatroom = Chatroom(name=chatroom_slug)
+    
